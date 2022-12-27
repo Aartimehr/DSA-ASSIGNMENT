@@ -15,7 +15,16 @@ void printVector(vector<int>A)
 //This function will return the index of minimum element from i to n-1
 int getIndexOfMinElementFromiToEnd(vector<int>A, int i)
 {
-	return 0;
+    int min =INT_MAX;
+    int index;
+    for(int j=i;j<A.size();j++)
+    {
+        if(A[j]<min){ 
+            min=A[j];
+            index = j; 
+        }
+    }
+	return index;
 }
  
 //the vector A will be sorted inplace and that's why passed with refrence
