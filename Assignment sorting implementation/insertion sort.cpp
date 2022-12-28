@@ -16,7 +16,7 @@ void sort(vector<int>&A)
          while (j >= 0 && A[j] > temp)
         {
             A[j + 1] = A[j];
-            j = j - 1;
+            j--;
         }
         A[j + 1] = temp;
     }
