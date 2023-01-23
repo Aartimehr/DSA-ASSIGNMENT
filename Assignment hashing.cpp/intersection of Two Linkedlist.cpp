@@ -10,7 +10,7 @@ public:
             mp[headB]++;
             headB=headB->next;
         }
-        for(auto x:mp) if(x.second>1) return x.first;
+        for(auto i:mp) if(i.second>1) return i.first;
         return NULL;
      }
 
