@@ -1,0 +1,16 @@
+
+
+string appendAndDelete(string s, string t, int k) {
+    int cl=0;
+    while(cl<s.size() && cl<t.size()){
+        if(s[cl]!=t[cl]) break;
+        cl++;
+    }
+    if(s.size()-cl+t.size()-cl<=k&& (s.size()-cl+t.size()-cl)%2==k%2){
+        return "Yes";
+    }
+    else if(s.size()+t.size()<=k){
+        return "Yes";
+    }
+    else return "No";
+}
